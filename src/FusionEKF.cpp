@@ -82,8 +82,8 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
                 0, 0, 0, 1;
 
      //set the acceleration noise components
-     noise_ax = 0.0225;
-     noise_ay = 0.0225;
+     noise_ax = 0.0125;
+     noise_ay = 0.0125;
 
      R_laser_ << noise_ax, 0 ,
                  0, noise_ay;
