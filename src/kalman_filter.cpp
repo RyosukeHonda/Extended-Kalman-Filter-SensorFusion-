@@ -38,9 +38,9 @@ void KalmanFilter::Update(const VectorXd &z) {
   MatrixXd K = PHt * Si;
 
   //new estimate
-  x_ = x_ +(K * y);
+  x_ = x_ + (K * y);
   long x_size = x_.size();
-  MatrixXd I = MatrixXd::Identity(x_size,x_size);
+  MatrixXd I = MatrixXd::Identity(x_size, x_size);
   P_ = (I - K * H_) * P_;
 }
 
