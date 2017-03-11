@@ -59,9 +59,9 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
     //R_laser_ << 0.15, 0,
     //            0, 0.15;
 
-    R_radar_ << 0.0225, 0, 0,
-                0, 0.0225, 0,
-                0, 0, 0.0225;
+    R_radar_ << 0.09, 0, 0,
+                0, 0.0009, 0,
+                0, 0, 0.09;
 
     // Laser measurement matrix
     H_laser_ << 1, 0, 0, 0,
@@ -73,8 +73,8 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
             1, 1, 1, 1;
 
         //set the acceleration noise components
-    noise_ax = 1000;
-    noise_ay = 1000;
+    noise_ax = 9;
+    noise_ay = 9;
 
 
     previous_timestamp_ = measurement_pack.timestamp_;
@@ -89,7 +89,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       float y_cart = measurement_pack.raw_measurements_[0] * sin(measurement_pack.raw_measurements_[1]);
 
       if (x_cart == 0 or y_cart ==0){
-        cout<<"Hello"<<endl;
+
         return;
       }
 
