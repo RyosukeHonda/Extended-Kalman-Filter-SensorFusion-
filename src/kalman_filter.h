@@ -60,6 +60,8 @@ public:
    * @param z The measurement at k+1
    */
   void Update(const VectorXd &z);
+    
+     void UpdateEKF(const VectorXd &z, const VectorXd &z_pred);
 
 };
 
