@@ -37,7 +37,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
     // first measurement
     cout <<"Kalman Filter Initialization" << endl;
     ekf_.x_ = VectorXd(4);
-    ekf_.x_ << 1, 1, 1, 1;
+    ekf_.x_ << 0, 0, 0, 0;
 
     //the initial transition matrix F_
     ekf_.F_ = MatrixXd(4, 4);
