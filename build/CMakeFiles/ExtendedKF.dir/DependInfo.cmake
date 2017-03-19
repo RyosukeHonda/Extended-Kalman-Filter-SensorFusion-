@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Ryosuke/Desktop/Extended-Kalman-Filter-SensorFusion-/src/main.cpp" "/Users/Ryosuke/Desktop/Extended-Kalman-Filter-SensorFusion-/cmake-build-debug/CMakeFiles/ExtendedKF.dir/src/main.cpp.o"
   "/Users/Ryosuke/Desktop/Extended-Kalman-Filter-SensorFusion-/src/tools.cpp" "/Users/Ryosuke/Desktop/Extended-Kalman-Filter-SensorFusion-/cmake-build-debug/CMakeFiles/ExtendedKF.dir/src/tools.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
